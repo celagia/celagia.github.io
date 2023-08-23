@@ -1,0 +1,54 @@
+body {
+      background-color: black;
+      color: #0F0;
+      font-family: "Courier New", monospace;
+      font-size: 14px;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .terminal {
+      border: 2px solid #0F0;
+      padding: 10px;
+    }
+
+    .command-line {
+      display: flex;
+    }
+
+    .prompt {
+      color: #0F0;
+      margin-right: 5px;
+    }
+
+    .input-line {
+      color: #0F0;
+      flex-grow: 1;
+      background-color: black;
+      font-family: "Courier New", monospace;
+    }
+
+    .output-line {
+      color: #0F0;
+      margin-top: 5px;
+    }
+}
+a {
+  color: #00d800;
+}
+
+a:link {
+  color: #00d800;
+}
+
+a:visited {
+  color: #008900;
+}
+
+a:hover {
+  color: #00c400;
+}
+
+a:active {
+  color: #00d800;
+}
