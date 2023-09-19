@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
         terminalOutput(command, output);
         break;
       case 'projects':
-        output = 'As well as this website, I have a couple of projects in the works. As well as this, feel free to check out the Mario Maths survey analytics Flask app in which I worked on the front-end at ';
+        output = 'I have a couple of projects in the works. Check my github for any uploads! As well as this, feel free to check out the Mario Maths survey analytics Flask app in which I worked on the front-end at ';
         terminalOutput(command, output);
         break;
       default:
