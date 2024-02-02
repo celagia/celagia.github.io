@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     switch(command) {
       case 'help':
-        output = 'Available commands: help, about, contact, cv, projects';
+        output = 'Available commands: help, about, contact, cv, projects, clear';
         terminalOutput(command, output);
         break;
       case 'about':
