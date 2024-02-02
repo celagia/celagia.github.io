@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         terminalOutput(command, output);
         break;
       case 'about':
-        output = 'Hi, my name is Jack. I am a data engineer looking to get into the world of web dev! I graduated from Falmouth University in Games Development, working with C# and Unity. I have been teaching myself web development and have experience using HTML, CSS, and Javascript. I am keen and excited to learn and get hands on!';
+        output = 'Hi, my name is Jack. I am a data engineer looking to get into the world of web dev! I graduated from Falmouth University in Games Development, working with C# and Unity. I have been teaching myself web development and have experience using HTML, CSS, Javascript, PHP, and Laravel. I am keen and excited to learn and get hands on!';
         terminalOutput(command, output);
         break;
       case 'contact':
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
         terminalOutput(command, output);
         break;
       case 'projects':
-        output = 'I have a couple of projects in the works. Check my github for any uploads! As well as this, feel free to check out the Mario Maths survey analytics Flask app in which I worked on the front-end at ';
+        output = 'I have a couple of projects in the works. Check my github for any uploads! My current main project is an Instagram clone using Laravel!';
         terminalOutput(command, output);
         break;
       default:
@@ -63,14 +63,10 @@ document.addEventListener('DOMContentLoaded', function() {
         break;
       case 'cv': 
         stdOutput(command, output);
-        outputLine.innerHTML = outputLine.innerHTML + '<a href="https://docs.google.com/document/d/1uvVTmdjqKjOrHSJ2wO2wiFZsZBWIxnpHtLdBA-RyRi8/export?format=pdf">here</a>';
+        outputLine.innerHTML = outputLine.innerHTML + '<a href="https://drive.google.com/file/d/1XT2VBaMQJDYbPehAFCB2NDr4hugqm1Pl/view?usp=sharing">here</a>';
         break;
       case 'clear':
         outputLine.innerHTML = "Welcome! Where would you like to go? Use 'help' for options.";
-        break;
-      case 'projects':
-        stdOutput(command, output);
-        outputLine.innerHTML = outputLine.innerHTML + '<a href="https://jottog.dev">jottog.dev</a>';
         break;
       default:
         stdOutput(command, output);
