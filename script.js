@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         terminalOutput(command, output);
         break;
       case 'about':
-        output = 'Hi, my name is Jack. I am a data engineer looking to get into the world of web dev! I graduated from Falmouth University in Games Development, working with C# and Unity. I have been teaching myself web development and have experience using HTML, CSS, Javascript, PHP, and Laravel. I am keen and excited to learn and get hands on!';
+        output = 'Hi, my name is Jack. I am a data engineer looking to transition fully into web dev! I graduated from Falmouth University in Games Development, working with C# and Unity. I have been teaching myself web development and have experience using HTML, CSS, Javascript, PHP, and Laravel. I am keen and excited to learn and get hands on!';
         terminalOutput(command, output);
         break;
       case 'contact':
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
         terminalOutput(command, output);
         break;
       case 'projects':
-        output = 'I have a couple of projects in the works. Check my github for any uploads! My current main project is an Instagram clone using Laravel!';
+        output = 'I have a couple of projects in the works. Check my github for any uploads! My current main WIP is a birdsong layering background noise web app using Laravel and Vue.js!';
         terminalOutput(command, output);
         break;
       default:
