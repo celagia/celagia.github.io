@@ -4,13 +4,13 @@ function newLink(text, href) {
   return link
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const inputLine = document.querySelector('.input-line');
   const outputLine = document.querySelector('.output-line');
 
   inputLine.focus(); // Automatically focus on the input field
 
-  inputLine.addEventListener('keydown', function(event) {
+  inputLine.addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
       const command = inputLine.value.trim(); // Get the entered command
       inputLine.value = ''; // Clear the input field
@@ -21,10 +21,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Process the command and generate output
   function executeCommand(command) {
-    
+
     let output = '';
 
-    switch(command) {
+    switch (command) {
       case 'help':
         output = 'Available commands: help, about, contact, cv, projects, clear';
         terminalOutput(command, output);
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
         terminalOutput(command, output);
         break;
       case 'projects':
-        output = 'I have a couple of projects in the works. Check my github for any uploads! My current main WIP is a birdsong layering background noise web app using Laravel and Vue.js!';
+        output = 'Check my github for any uploads! My current main WIP is a birdsong layering background noise web app using Laravel and Vue.js! Also feel free to check out my Instagram clone also created with Laravel ';
         terminalOutput(command, output);
         break;
       default:
@@ -54,23 +54,27 @@ document.addEventListener('DOMContentLoaded', function() {
         break;
     }
 
-  // Display the output in the terminal
-  function terminalOutput(command, output) {
-    switch(command) {
-      case 'contact':
-        stdOutput(command, output);
-        outputLine.innerHTML = outputLine.innerHTML + '<a href="https://www.linkedin.com/in/jackrhowarth/">here</a>';
-        break;
-      case 'cv': 
-        stdOutput(command, output);
-        outputLine.innerHTML = outputLine.innerHTML + '<a href="https://drive.google.com/file/d/1XT2VBaMQJDYbPehAFCB2NDr4hugqm1Pl/view?usp=sharing">here</a>';
-        break;
-      case 'clear':
-        outputLine.innerHTML = "Welcome! Where would you like to go? Use 'help' for options.";
-        break;
-      default:
-        stdOutput(command, output);
-        break;
+    // Display the output in the terminal
+    function terminalOutput(command, output) {
+      switch (command) {
+        case 'contact':
+          stdOutput(command, output);
+          outputLine.innerHTML = outputLine.innerHTML + '<a href="https://www.linkedin.com/in/jackrhowarth/">here</a>';
+          break;
+        case 'cv':
+          stdOutput(command, output);
+          outputLine.innerHTML = outputLine.innerHTML + '<a href="https://drive.google.com/file/d/1XT2VBaMQJDYbPehAFCB2NDr4hugqm1Pl/view?usp=sharing">here</a>';
+          break;
+        case 'projects':
+          stdOutput(command, output);
+          outputLine.innerHTML = outputLine.innerHTML + '<a href="https://codestagram.fly.dev/">here</a>';
+          break;
+        case 'clear':
+          outputLine.innerHTML = "Welcome! Where would you like to go? Use 'help' for options.";
+          break;
+        default:
+          stdOutput(command, output);
+          break;
       }
     }
 
